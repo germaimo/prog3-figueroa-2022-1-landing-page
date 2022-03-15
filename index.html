@@ -17,11 +17,7 @@
 			Call to action: Sección horizontal con color de background pleno, título, texto corto y botón (Todo centrado vertical y horizontalmente). 
 			Ejemplo del texto del botón: Conocé más, Consultar, Más info, etc.
 			Formulario: Título, texto corto y formulario con los siguientes campos
-			Nombre: name nombre,  type text
-			Email: name email, type email
-			Sexo: name sexo, type select - Options: Elegir (disabled) F, M, Otro
-			Comentarios: name comentarios, type textarea
-			Enviar: type submit
+			
 			Mensaje de gracias por enviar
 			Footer: Copyright derecha y redes sociales a la izquierda
 
@@ -29,6 +25,13 @@
 		*/
 
 	</script>
+
+    <style>
+        form{
+            display: grid;
+            width: min-content;
+        }
+    </style>
 
 	<nav id="navbar"></nav>
 
@@ -40,7 +43,32 @@
 
 	<section id="formulario">
 		
-		<form></form>
+		<form action="" method="post">
+            
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre">
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email">
+            
+            <label for="sexo">Sexo:</label>
+            
+            <select id="sexo" name="sexo">
+                <option value="Elegir">Elegir</option>
+                <option value="F">F</option>
+                <option value="M">M</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <br>
+
+            <textarea name="textarea" rows="10" cols="50" placeholder="Comentarios:"></textarea>
+
+            <br>
+            
+            <input type="submit" value="Enviar">
+              
+        </form>
 
 	</section>
 
