@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Afriqua</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     
@@ -92,7 +93,7 @@
             color: white;
         }
 
-        nav{
+        header{
             height: 10vh;
         }
 
@@ -113,6 +114,37 @@
 
         #hero p{
             padding: 9em;
+        }
+
+        #features{
+            padding-bottom: 2em;
+        }
+
+        #features article, #cta{
+            text-align: center;
+        }
+
+        #features article:first-child{
+            margin-top: 2em;
+        }
+
+        #features article:not(:last-child){
+            margin-bottom: 2em;
+        }
+
+        .leyenda{
+            font-size: 11px;
+            margin-bottom: 2em;
+        }
+
+        .numero-grande{
+            font-size: 9em;
+        }
+
+        #cta{
+            background-color: grey;
+            padding-top: 3em;
+            padding-bottom: 3em;
         }
 
         form{
@@ -163,21 +195,23 @@
     </style>
 
 
-	<nav>
+	<header>
         <h1>AFRIQUA</h1>
-    </nav>
+    </header>
 
 	<section id="hero">
         <p>Afriqua (también conocido como Adam Longman Parker) <br> elabora sus producciones mercuriales con la vista puesta en el futuro y el oído en el pasado.</p>
     </section>
 
 	<section id="features">
+        
         <article>
-            <p>Años de carrera</p>
-            <p>7</p>
+            <p class="leyenda">Años de carrera</p>
+            <p class="numero-grande">7</p>
         </article>
+        
         <article>
-            <p>Paises recorridos</p>
+            <p class="leyenda">Paises recorridos</p>
             <ul>
                 <li>Berlín, DE </li>
                 <li>Londres, Reino Unido </li> 
@@ -186,12 +220,34 @@
                 <li>Buenos Aires, Argentina </li>
             </ul>
         </article>
-        <article></article>
+
+        <article>
+            <p class="leyenda">Clubs</p>
+            <ul>
+                <li>Club der Visionaere</li>
+                <li>Renate</li>
+                <li>Flash</li>
+                <li>Marble Bar</li>
+                <li>Avant Garten</li>
+            </ul>
+
+        </article>
     </section>
 
-	<section id="cta"></section>
+	<section id="cta">
+        <p>DJ desde sus años de preadolescencia.</p>
+        <p>Proveniente de Hampton Roads, la región de Virginia que cambió la música popular a través de artistas locales
+             como Timbaland, Missy Elliot y The Neptunes, Parker ha vivido para la música toda su vida. Prodigiosamente talentoso 
+             como pianista, estudió en Interlochen en Michigan, así como en la Royal Academy of Music antes de experimentar un momento
+              de Damasco mientras escuchaba a Ricardo Villalobos DJ en la sala uno de Fabric</p>
+        <button>Mas info</button>
+    </section>
 
 	<section id="formulario">
+
+        <p>titulo corto</p>
+
+        <p>texto corto</p>
 		
 		<form action="" method="post">
             
@@ -233,6 +289,8 @@
             <li><a href="https://www.instagram.com/afriquamusic/?hl=es" target="_blank">  <img src="./assets/images/icons8-instagram.svg" alt=""> </a></li>
         </ul>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
