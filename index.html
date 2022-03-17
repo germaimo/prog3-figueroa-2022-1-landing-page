@@ -92,8 +92,27 @@
             color: white;
         }
 
-        img{
-            filter: invert(1);
+        nav{
+            height: 10vh;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            line-height: 1.5em;
+            font-weight: bolder;
+            letter-spacing: 1px;
+        }
+
+        #hero{
+            background-image: url('./assets/images/Afriqua-2019.jpg');
+            height: 70vh;
+            text-align: center;
+            background-position: center;
+        }
+
+        #hero p{
+            padding: 9em;
         }
 
         form{
@@ -101,6 +120,9 @@
             width: min-content;
         }
 
+        footer img{
+            filter: invert(1);
+        }
         /* .iconoFacebook{
             background-image: url('/assets/images/icons8-facebook.svg');
             background-repeat: no-repeat;
@@ -141,11 +163,31 @@
     </style>
 
 
-	<nav id="navbar"></nav>
+	<nav>
+        <h1>AFRIQUA</h1>
+    </nav>
 
-	<section id="hero"></section>
+	<section id="hero">
+        <p>Afriqua (también conocido como Adam Longman Parker) <br> elabora sus producciones mercuriales con la vista puesta en el futuro y el oído en el pasado.</p>
+    </section>
 
-	<section id="features"></section>
+	<section id="features">
+        <article>
+            <p>Años de carrera</p>
+            <p>7</p>
+        </article>
+        <article>
+            <p>Paises recorridos</p>
+            <ul>
+                <li>Berlín, DE </li>
+                <li>Londres, Reino Unido </li> 
+                <li>París, Francia </li>
+                <li>Detroit, Estados Unidos</li> 
+                <li>Buenos Aires, Argentina </li>
+            </ul>
+        </article>
+        <article></article>
+    </section>
 
 	<section id="cta"></section>
 
@@ -184,11 +226,11 @@
         <p class="copyright">all rights reserved - copyright © 2022</p>
 
         <ul class="redes-sociales">
-            <li><a href="https://www.youtube.com/channel/UC5rVqw_OlhUsZ6ppzzJCEOQ" target="_blank"> <img src="/assets/images/icons8-youtube.svg" alt=""> </a></li>
-            <li><a href="https://open.spotify.com/artist/4x9k6DMgS8vPNv48Yol5Kp?autoplay=true" target="_blank"> <img src="/assets/images/icons8-spotify.svg" alt=""> </a></li>
-            <li><a href="https://www.facebook.com/AfriquaMusic" target="_blank"> <img src="/assets/images/icons8-facebook.svg" alt=""> </a></li>
-            <li><a href="https://soundcloud.com/afriqua" target="_blank"> <img src="/assets/images/icons8-soundcloud.svg" alt=""> </a></li>
-            <li><a href="https://www.instagram.com/afriquamusic/?hl=es" target="_blank">  <img src="/assets/images/icons8-instagram.svg" alt=""> </a></li>
+            <li><a href="https://www.youtube.com/channel/UC5rVqw_OlhUsZ6ppzzJCEOQ" target="_blank"> <img src="./assets/images/icons8-youtube.svg" alt=""> </a></li>
+            <li><a href="https://open.spotify.com/artist/4x9k6DMgS8vPNv48Yol5Kp?autoplay=true" target="_blank"> <img src="./assets/images/icons8-spotify.svg" alt=""> </a></li>
+            <li><a href="https://www.facebook.com/AfriquaMusic" target="_blank"> <img src="./assets/images/icons8-facebook.svg" alt=""> </a></li>
+            <li><a href="https://soundcloud.com/afriqua" target="_blank"> <img src="./assets/images/icons8-soundcloud.svg" alt=""> </a></li>
+            <li><a href="https://www.instagram.com/afriquamusic/?hl=es" target="_blank">  <img src="./assets/images/icons8-instagram.svg" alt=""> </a></li>
         </ul>
     </footer>
 
