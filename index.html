@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afriqua</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jvc8bew.css">
 </head>
 <body>
     
@@ -88,16 +89,25 @@
 
 
         body{
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-family: superior-title,serif;
+            font-weight: 400;
+            font-style: normal;
             background-color: black;
             color: white;
         }
 
         header{
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            margin: auto;
             height: 10vh;
         }
 
         h1{
+            font-family: superior-title,serif;
+            font-weight: 700;
+            font-style: normal;
             text-align: center;
             font-size: 3rem;
             line-height: 1.5em;
@@ -107,7 +117,7 @@
 
         #hero{
             background-image: url('./assets/images/Afriqua-2019.jpg');
-            height: 70vh;
+            height: 60vh;
             text-align: center;
             background-position: center;
         }
@@ -120,7 +130,11 @@
             padding-bottom: 2em;
         }
 
-        #features article, #cta{
+        #features article ul{
+            letter-spacing: 1px;
+        }
+
+        #features article, #cta, #formulario p{
             text-align: center;
         }
 
@@ -132,13 +146,28 @@
             margin-bottom: 2em;
         }
 
+        .titulo{
+            margin-bottom: 1em;
+            font-size: 2em;
+        }
+
         .leyenda{
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-size: 11px;
             margin-bottom: 2em;
         }
 
+        .descripcion{
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            letter-spacing: 1px;
+            font-size: 15px;
+            width: 40em;
+            margin: auto;
+        }
+
         .numero-grande{
             font-size: 9em;
+            line-height: .5;
         }
 
         #cta{
@@ -147,9 +176,23 @@
             padding-bottom: 3em;
         }
 
+        #cta button{
+            margin-top: 1em;
+        }
+
         form{
             display: grid;
             width: min-content;
+            margin: auto;
+        }
+
+        label{
+            margin-bottom: 0.5em;
+            margin-top: 1em;
+        }
+
+        #formulario{
+            padding-top: 1em;
         }
 
         footer img{
@@ -167,12 +210,12 @@
         */
 
         footer{
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             display: flex;
             align-items: center;
-            /* position: absolute;
-            bottom: 0; */
             justify-content: space-between;
             opacity: .5;
+            margin-top: 2em;
         }
 
         .copyright{
@@ -191,6 +234,57 @@
         .redes-sociales li:not(:first-child){
             margin-left: 1em;
         }
+
+        /**media queries**/
+
+        @media (min-width: 576px) { 
+            body{
+                border: 2px solid red;
+            }
+        }
+
+        /* Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) { 
+            body{
+                border: 2px solid white;
+            }
+            
+            #features{
+                display: flex;
+                align-items: baseline;
+                width: fit-content;
+                margin: auto;
+            }
+
+            #features article:not(:last-child){
+                margin-right: 5em;
+            }
+            
+        }
+
+        /* Large devices (desktops, 992px and up)*/ 
+        @media (min-width: 992px) { 
+            body{
+                border: 2px solid green;
+            }
+
+            #features article:not(:last-child){
+                margin-right: 10em;
+            }
+         }
+
+        /*Extra large devices (large desktops, 1200px and up)*/ 
+        @media (min-width: 1200px) {
+            body{
+                border: 2px solid blue;
+            }
+
+            #features article:not(:last-child){
+                margin-right: 15em;
+            }
+          }
+
+        /**fin media queries**/
 
     </style>
 
@@ -235,8 +329,8 @@
     </section>
 
 	<section id="cta">
-        <p>DJ desde sus años de preadolescencia.</p>
-        <p>Proveniente de Hampton Roads, la región de Virginia que cambió la música popular a través de artistas locales
+        <p class="titulo">DJ desde sus años de preadolescencia.</p>
+        <p class="descripcion">Proveniente de Hampton Roads, la región de Virginia que cambió la música popular a través de artistas locales
              como Timbaland, Missy Elliot y The Neptunes, Parker ha vivido para la música toda su vida. Prodigiosamente talentoso 
              como pianista, estudió en Interlochen en Michigan, así como en la Royal Academy of Music antes de experimentar un momento
               de Damasco mientras escuchaba a Ricardo Villalobos DJ en la sala uno de Fabric</p>
@@ -245,9 +339,9 @@
 
 	<section id="formulario">
 
-        <p>titulo corto</p>
+        <p class="titulo">Suscripcion al newsletter</p>
 
-        <p>texto corto</p>
+        <p class="descripcion">Mantenete al tanto de todo lo que Afriqua tenga para ofrecer</p>
 		
 		<form action="" method="post">
             
