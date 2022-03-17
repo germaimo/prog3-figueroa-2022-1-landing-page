@@ -1,0 +1,315 @@
+/* reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+button, input[type=submit] {
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+}
+
+/* reset fin */
+
+/* ref colores
+$dark-sienna: #2A0F04ff;
+$dutch-white: #D3C9ACff;
+$seal-brown: #41200Fff;
+$coyote-brown: #80592Fff;
+$ecru: #B9AC7Dff;
+*/
+
+
+body{
+    font-family: superior-title,serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #2A0F04ff;
+    color:  #D3C9ACff;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    height: 10vh;
+}
+
+h1{
+    font-family: superior-title,serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#hero{
+    background-image: url('../images/Afriqua-2019.jpg');
+    height: 60vh;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero p{
+    padding: 9em;
+    color: aliceblue;
+}
+
+#features{
+    justify-content: center;
+    padding-bottom: 2em;
+    background: content-box;
+    color: aliceblue;
+}
+
+#features article ul{
+    letter-spacing: 1px;
+}
+
+#features article, #cta, #formulario p{
+    text-align: center;
+}
+
+#features article:first-child{
+    padding-top: 2em;
+}
+
+#features article:not(:last-child){
+    margin-bottom: 2em;
+}
+
+#features img{
+    filter: invert(1);
+}
+
+.titulo{
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.leyenda{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    margin-bottom: 2em;
+}
+
+.descripcion{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    width: 30em;
+    margin: auto;
+}
+
+.numero-grande{
+    font-size: 9em;
+    line-height: .5;
+}
+
+#cta{
+    background-color: #80592Fff;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#cta button{
+    margin-top: 1em;
+}
+
+form{
+    display: grid;
+    width: min-content;
+    margin: auto;
+}
+
+input[type=submit]{
+    margin-bottom: 1em;
+}
+
+label{
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+#formulario{
+    padding-top: 1em;
+    background-color:  #D3C9ACff;
+    color: #2A0F04ff;
+}
+
+footer img{
+    filter: invert(1);
+}
+/* .iconoFacebook{
+    background-image: url('/assets/images/icons8-facebook.svg');
+    background-repeat: no-repeat;
+} 
+
+.iconoSoundcloud{
+    background-image: url('/assets/images/icons8-soundcloud.svg');
+    background-repeat: no-repeat;
+}
+*/
+
+footer{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: .5;
+    margin-top: 1em;
+    padding: 0 0.5em 0.5em;
+}
+
+.copyright{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.redes-sociales{
+    display: flex;
+}
+
+.redes-sociales li:not(:first-child){
+    margin-left: 1em;
+}
+
+.btn {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+color: #2A0F04ff;
+font-size: 20px;
+background: #f0f8ff;
+padding: 10px 20px 10px 20px;
+text-decoration: none;
+}
+
+.btn:hover {
+text-decoration: none;
+}
+
+.oculto{
+    display: none;
+}
+
+/**media queries**/
+
+@media (min-width: 576px) { 
+    #hero p{
+        padding: 6em;
+        font-size: 1.5em;
+    }
+
+    .descripcion{
+        width: 40em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    #features{
+        display: flex;
+        align-items: baseline;
+        
+        margin: auto;
+    }
+
+    #hero p{
+        padding: 5em;
+        font-size: 2em;
+    }
+
+    #features article:not(:last-child){
+        margin-right: 5em;
+    }
+    
+}
+
+/* Large devices (desktops, 992px and up)*/ 
+@media (min-width: 992px) { 
+    #hero p{
+        padding: 6em;
+        font-size: 2em;
+    }
+
+    #features article:not(:last-child){
+        margin-right: 10em;
+    }
+    }
+
+/*Extra large devices (large desktops, 1200px and up)*/ 
+@media (min-width: 1200px) {
+    #hero p{
+        padding: 7em;
+        font-size: 2em;
+    }
+
+    #features article:not(:last-child){
+        margin-right: 15em;
+    }
+    }
+
+/**fin media queries**/
