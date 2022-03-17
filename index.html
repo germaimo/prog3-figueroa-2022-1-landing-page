@@ -25,7 +25,12 @@
 
 
 		*/
-
+        /*$dark-sienna: #2A0F04ff;
+        $dutch-white: #D3C9ACff;
+        $seal-brown: #41200Fff;
+        $coyote-brown: #80592Fff;
+        $ecru: #B9AC7Dff;
+        */
 	</script>
 
     <style>
@@ -85,6 +90,13 @@
             margin-inline-start: 0;
             margin-inline-end: 0;
         }
+
+        button, input[type=submit] {
+             border: none;
+             text-decoration: none;
+             cursor: pointer;
+        }
+
         /* reset fin */
 
 
@@ -92,8 +104,8 @@
             font-family: superior-title,serif;
             font-weight: 400;
             font-style: normal;
-            background-color: black;
-            color: white;
+            background-color: #2A0F04ff;
+            color:  #D3C9ACff;
         }
 
         header{
@@ -120,13 +132,18 @@
             height: 60vh;
             text-align: center;
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         #hero p{
             padding: 9em;
+            color: aliceblue;
         }
 
         #features{
+            background: aliceblue;
+            justify-content: center;
             padding-bottom: 2em;
         }
 
@@ -139,7 +156,7 @@
         }
 
         #features article:first-child{
-            margin-top: 2em;
+            padding-top: 2em;
         }
 
         #features article:not(:last-child){
@@ -171,7 +188,7 @@
         }
 
         #cta{
-            background-color: grey;
+            background-color: #80592Fff;
             padding-top: 3em;
             padding-bottom: 3em;
         }
@@ -186,6 +203,10 @@
             margin: auto;
         }
 
+        input[type=submit]{
+            margin-bottom: 1em;
+        }
+
         label{
             margin-bottom: 0.5em;
             margin-top: 1em;
@@ -193,6 +214,8 @@
 
         #formulario{
             padding-top: 1em;
+            background-color:  #D3C9ACff;
+            color: #2A0F04ff;
         }
 
         footer img{
@@ -215,7 +238,8 @@
             align-items: center;
             justify-content: space-between;
             opacity: .5;
-            margin-top: 2em;
+            margin-top: 1em;
+            padding: 0 0.5em 0.5em;
         }
 
         .copyright{
@@ -235,11 +259,31 @@
             margin-left: 1em;
         }
 
+        .btn {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #2A0F04ff;
+        font-size: 20px;
+        background: #f0f8ff;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        }
+
+        .btn:hover {
+        text-decoration: none;
+        }
+
         /**media queries**/
 
         @media (min-width: 576px) { 
             body{
                 border: 2px solid red;
+            }
+
+            #hero p{
+                padding: 6em;
+                font-size: 1.5em;
             }
         }
 
@@ -252,8 +296,13 @@
             #features{
                 display: flex;
                 align-items: baseline;
-                width: fit-content;
+                
                 margin: auto;
+            }
+
+            #hero p{
+                padding: 5em;
+                font-size: 2em;
             }
 
             #features article:not(:last-child){
@@ -268,6 +317,11 @@
                 border: 2px solid green;
             }
 
+            #hero p{
+                padding: 6em;
+                font-size: 2em;
+            }
+
             #features article:not(:last-child){
                 margin-right: 10em;
             }
@@ -277,6 +331,11 @@
         @media (min-width: 1200px) {
             body{
                 border: 2px solid blue;
+            }
+
+            #hero p{
+                padding: 7em;
+                font-size: 2em;
             }
 
             #features article:not(:last-child){
@@ -333,8 +392,8 @@
         <p class="descripcion">Proveniente de Hampton Roads, la región de Virginia que cambió la música popular a través de artistas locales
              como Timbaland, Missy Elliot y The Neptunes, Parker ha vivido para la música toda su vida. Prodigiosamente talentoso 
              como pianista, estudió en Interlochen en Michigan, así como en la Royal Academy of Music antes de experimentar un momento
-              de Damasco mientras escuchaba a Ricardo Villalobos DJ en la sala uno de Fabric</p>
-        <button>Mas info</button>
+              de Damasco mientras escuchaba a Ricardo Villalobos DJ en la sala uno de Fabric.</p>
+        <button class="btn">Mas info</button>
     </section>
 
 	<section id="formulario">
@@ -366,7 +425,7 @@
 
             <br>
             
-            <input type="submit" value="Enviar">
+            <input class="btn" type="submit" value="Enviar">
               
         </form>
 
