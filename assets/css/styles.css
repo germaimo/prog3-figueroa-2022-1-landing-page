@@ -83,9 +83,8 @@ body{
 header{
     display: flex;
     align-items: center;
-    width: fit-content;
-    margin: auto;
-    height: 10vh;
+    justify-content: center;
+    padding: 2em 0 1.5em;
 }
 
 h1{
@@ -94,23 +93,35 @@ h1{
     font-style: normal;
     text-align: center;
     font-size: 3rem;
-    line-height: 1.5em;
     font-weight: bolder;
     letter-spacing: 1px;
+    display: contents;
+}
+
+h1 img{
+    width: 6em;
+    filter: invert(1);
 }
 
 #hero{
     background-image: url('../images/Afriqua-2019.jpg');
     height: 60vh;
-    text-align: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: end;
 }
 
 #hero p{
-    padding: 9em;
     color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 18em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #features{
@@ -138,6 +149,7 @@ h1{
 
 #features img{
     filter: invert(1);
+    width: 4em;
 }
 
 .titulo{
@@ -147,20 +159,22 @@ h1{
 
 .leyenda{
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 11px;
+    font-size: 1em;
     margin-bottom: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .descripcion{
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     font-size: 15px;
     width: 30em;
     margin: auto;
 }
 
 .numero-grande{
-    font-size: 9em;
+    font-size: 7em;
     line-height: .5;
 }
 
@@ -176,12 +190,33 @@ h1{
 
 form{
     display: grid;
-    width: min-content;
+    width: 400px;
     margin: auto;
+}
+
+form, select, input[type=text], input[type=email], textarea{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select, input[type=text], input[type=email]{
+    padding: 1em;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+textarea{
+    border: none;
+    border-radius: 5px;
+    padding: 1em;
 }
 
 input[type=submit]{
     margin-bottom: 1em;
+}
+
+form input[type=submit]{
+    width: fit-content;
+    margin: 1em auto;
 }
 
 label{
@@ -259,7 +294,6 @@ text-decoration: none;
 
 @media (min-width: 576px) { 
     #hero p{
-        padding: 6em;
         font-size: 1.5em;
     }
 
@@ -273,43 +307,42 @@ text-decoration: none;
     #features{
         display: flex;
         align-items: baseline;
-        
         margin: auto;
     }
 
     #hero p{
-        padding: 5em;
-        font-size: 2em;
+        padding: 1em;
+        font-size: 1em;
     }
 
     #features article:not(:last-child){
         margin-right: 5em;
+    }
+
+    form{
+        width: 600px;
     }
     
 }
 
 /* Large devices (desktops, 992px and up)*/ 
 @media (min-width: 992px) { 
-    #hero p{
-        padding: 6em;
-        font-size: 2em;
-    }
 
     #features article:not(:last-child){
         margin-right: 10em;
     }
-    }
+}
 
 /*Extra large devices (large desktops, 1200px and up)*/ 
 @media (min-width: 1200px) {
     #hero p{
-        padding: 7em;
-        font-size: 2em;
+        padding: 1em;
+        font-size: 1.5em;
     }
 
     #features article:not(:last-child){
         margin-right: 15em;
     }
-    }
+}
 
 /**fin media queries**/
