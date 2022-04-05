@@ -171,6 +171,7 @@ h1 img{
     font-size: 15px;
     width: 30em;
     margin: auto;
+    margin-bottom: 2em;
 }
 
 .numero-grande{
@@ -252,7 +253,7 @@ footer{
     justify-content: space-between;
     opacity: .5;
     margin-top: 1em;
-    padding: 0 0.5em 0.5em;
+    padding: 2em;
 }
 
 .copyright{
