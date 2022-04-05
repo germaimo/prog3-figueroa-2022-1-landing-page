@@ -225,7 +225,8 @@ label{
 }
 
 #formulario{
-    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-top: 3em;
     background-color:  #D3C9ACff;
     color: #2A0F04ff;
 }
