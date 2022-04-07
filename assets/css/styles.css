@@ -61,6 +61,18 @@ button, input[type=submit] {
         cursor: pointer;
 }
 
+
+select{
+    appearance: none;
+    -moz-appereance: none;
+    -webkit-appearance: none;
+    padding-right: 20px;
+    background-image: url('/assets/images/otraflecha.svg');
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    background-size: 10px;
+    color: grey;
+}
 /* reset fin */
 
 /* ref colores

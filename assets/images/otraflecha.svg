@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="9" viewBox="0 0 9 9">
+  <defs>
+    <clipPath id="clip-Web_1920_2">
+      <rect width="9" height="9"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_2" data-name="Web 1920 – 2" clip-path="url(#clip-Web_1920_2)">
+    <rect width="9" height="9" fill="#fff"/>
+    <path id="Icon_awesome-arrow-down" data-name="Icon awesome-arrow-down" d="M8.422,6l.437.437a.471.471,0,0,1,0,.668L5.033,10.936a.471.471,0,0,1-.668,0L.536,7.107a.471.471,0,0,1,0-.668L.973,6a.473.473,0,0,1,.676.008L3.91,8.383V2.723a.472.472,0,0,1,.473-.473h.63a.472.472,0,0,1,.473.473v5.66L7.747,6.01A.47.47,0,0,1,8.422,6Z" transform="translate(-0.198 -2.162)"/>
+  </g>
+</svg>

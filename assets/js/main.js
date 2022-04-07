@@ -1,6 +1,5 @@
 $(document).ready(() => {
-    console.log('Cargó el documento!!!!!');
-  
+     /* 
     //GET LEADS FROM DB
     const handleGetLeads = () => {
       $('.listado').html('');
@@ -19,7 +18,7 @@ $(document).ready(() => {
     };
   
     
-    handleGetLeads();
+    handleGetLeads(); */
   
     $.validator.addMethod(
       'customemail',
@@ -50,25 +49,28 @@ $(document).ready(() => {
       messages: {
         nombre: 'Ingresá tu nombre',
         sexo: 'Seleccioná tu sexo',
+        email: 'Ingresá tu email',
       },
       submitHandler: (form) => {
-        console.log('Todo ok para enviar', $(form).serialize());
+        //console.log('Todo ok para enviar', $(form).serialize());
         $.ajax({
           url: form.action,
           type: form.method,
           data: $(form).serialize(),
           beforeSend: () => {
-            console.log('Datos a enviar');
+            $('#btn').hide();
             $('.loading_spinner').show();
           },
           success: () => {
-            console.log('DATOS ENVIADOS!!!!!!!!!!');
+            
             $('.loading_spinner').hide();
-            $('.respuesta_form').html('Muchas gracias señore');
-  
+            $('.mensaje_respuesta').html('Muchas gracias');
+            
             setTimeout(() => {
-              $('.respuesta_form').html('');
-              handleGetLeads();
+              $('#btn').show();
+              $('.mensaje_respuesta').html('');
+              $('#main_form').trigger("reset");
+              //handleGetLeads();
             }, 1000);
           },
         });
